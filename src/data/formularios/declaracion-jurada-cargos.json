@@ -1,0 +1,60 @@
+{
+  "slug": "declaracion-jurada-cargos",
+  "orden": 2,
+  "layout": "ddjj-cargos",
+  "titulo": "Declaración jurada de cargos",
+  "descripcion": "DDJJ de los cargos y actividades que desempeñás (Dcto. Nº 94/3 SH — Dcto. 785/14/96), con el cuadro de horarios. Se imprime y se presenta firmada.",
+  "etiquetas": ["declaracion jurada", "ddjj", "cargos", "horas catedra", "horarios", "incompatibilidad"],
+  "aviso": "Los recuadros \"Certifico que los datos consignados…\" (LUGAR y FECHA de cada cuadro) y la firma del Director quedan en blanco: los completa y firma cada repartición.",
+  "campos": [
+    { "nombre": "dni", "label": "DNI", "tipo": "text", "obligatorio": true, "validacion": "dni", "inputMode": "numeric", "placeholder": "Sin puntos", "misDatos": "dni", "grupo": "1 · Documento" },
+    { "nombre": "cuil", "label": "CUIL", "tipo": "text", "obligatorio": true, "validacion": "cuil", "inputMode": "numeric", "placeholder": "27-12345678-9", "misDatos": "cuil", "grupo": "1 · Documento" },
+    { "nombre": "ipss", "label": "Nº I.P.S.S.", "tipo": "text", "misDatos": "ipss", "grupo": "1 · Documento" },
+    { "nombre": "fecha_nacimiento", "label": "Fecha de nacimiento", "tipo": "date", "obligatorio": true, "misDatos": "fecha_nacimiento", "grupo": "1 · Documento" },
+    { "nombre": "otro_documento", "label": "Si no tenés DNI/CUIL, especificá tu documentación", "tipo": "text", "grupo": "1 · Documento" },
+
+    { "nombre": "apellido", "label": "Apellido/s", "tipo": "text", "obligatorio": true, "misDatos": "apellido", "ayuda": "La mujer casada indica primero su apellido de soltera.", "grupo": "2 · Apellido y nombres" },
+    { "nombre": "nombre", "label": "Nombres", "tipo": "text", "obligatorio": true, "misDatos": "nombre", "ayuda": "Escribí todos los nombres completos.", "grupo": "2 · Apellido y nombres" },
+
+    { "nombre": "domicilio", "label": "Domicilio (calle)", "tipo": "text", "obligatorio": true, "misDatos": "domicilio", "grupo": "3 · Domicilio" },
+    { "nombre": "domicilio_numero", "label": "Nº", "tipo": "text", "inputMode": "numeric", "grupo": "3 · Domicilio" },
+    { "nombre": "localidad", "label": "Localidad", "tipo": "text", "obligatorio": true, "misDatos": "localidad", "grupo": "3 · Domicilio" },
+
+    {
+      "nombre": "cargos",
+      "label": "Cargo",
+      "tipo": "lista",
+      "obligatorio": true,
+      "min": 1,
+      "max": 3,
+      "grupo": "4, 5 y 6 · Cargos y horarios",
+      "titulosItems": ["Cuadro 4 · Cargo principal", "Cuadro 5 · Otra repartición", "Cuadro 6 · Otra repartición"],
+      "textoAgregar": "Agregar otro cargo",
+      "itemsIniciales": [{ "ministerio": "Ministerio de Educación" }],
+      "subcampos": [
+        { "nombre": "ministerio", "label": "Ministerio, Secretaría, etc.", "tipo": "text", "obligatorio": true },
+        { "nombre": "reparticion", "label": "Repartición", "tipo": "text", "placeholder": "Ej: Dirección de Educación Primaria" },
+        { "nombre": "dependencia", "label": "Dependencia, oficina, escuela", "tipo": "text", "obligatorio": true, "placeholder": "Ej: Escuela N° 123" },
+        { "nombre": "funciones", "label": "Horas cátedra / funciones que desempeña", "tipo": "text", "obligatorio": true, "placeholder": "Ej: Maestra de grado / 12 hs cátedra" },
+        { "nombre": "calle", "label": "Calle (de la dependencia)", "tipo": "text" },
+        { "nombre": "numero", "label": "Nº", "tipo": "text", "inputMode": "numeric" },
+        { "nombre": "localidad", "label": "Localidad (de la dependencia)", "tipo": "text" },
+        { "nombre": "cumple", "label": "Cumple horario", "tipo": "select", "opciones": ["Completo", "Reducido"] },
+        { "nombre": "hora_desde", "label": "De (hora)", "tipo": "time" },
+        { "nombre": "hora_hasta", "label": "A (hora)", "tipo": "time" },
+
+        { "nombre": "dom", "label": "Domingo", "tipo": "text", "placeholder": "Ej: 8 a 12", "compacto": true, "subgrupo": "Horario semanal (cuadro de la pág. 2)" },
+        { "nombre": "lun", "label": "Lunes", "tipo": "text", "placeholder": "Ej: 8 a 12", "compacto": true, "subgrupo": "Horario semanal (cuadro de la pág. 2)" },
+        { "nombre": "mar", "label": "Martes", "tipo": "text", "placeholder": "Ej: 8 a 12", "compacto": true, "subgrupo": "Horario semanal (cuadro de la pág. 2)" },
+        { "nombre": "mie", "label": "Miércoles", "tipo": "text", "placeholder": "Ej: 8 a 12", "compacto": true, "subgrupo": "Horario semanal (cuadro de la pág. 2)" },
+        { "nombre": "jue", "label": "Jueves", "tipo": "text", "placeholder": "Ej: 8 a 12", "compacto": true, "subgrupo": "Horario semanal (cuadro de la pág. 2)" },
+        { "nombre": "vie", "label": "Viernes", "tipo": "text", "placeholder": "Ej: 8 a 12", "compacto": true, "subgrupo": "Horario semanal (cuadro de la pág. 2)" },
+        { "nombre": "sab", "label": "Sábado", "tipo": "text", "placeholder": "Ej: 8 a 12", "compacto": true, "subgrupo": "Horario semanal (cuadro de la pág. 2)" }
+      ]
+    },
+
+    { "nombre": "lugar", "label": "Lugar", "tipo": "text", "obligatorio": true, "default": "San Miguel de Tucumán", "grupo": "Lugar y fecha de la declaración" },
+    { "nombre": "fecha_nota", "label": "Fecha", "tipo": "date", "obligatorio": true, "default": "hoy", "grupo": "Lugar y fecha de la declaración" },
+    { "nombre": "acepto", "label": "Declaro bajo juramento que todos los datos consignados son veraces y exactos", "tipo": "checkbox", "obligatorio": true, "grupo": "Lugar y fecha de la declaración" }
+  ]
+}

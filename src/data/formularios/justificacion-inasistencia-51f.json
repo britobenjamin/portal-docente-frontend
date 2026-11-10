@@ -1,0 +1,31 @@
+{
+  "slug": "justificacion-inasistencia-51f",
+  "orden": 1,
+  "titulo": "Justificación de inasistencia — Art. 51 \"F\"",
+  "descripcion": "Nota a la dirección para justificar una inasistencia por razones particulares (Decreto 505/14, artículo 51 \"F\").",
+  "etiquetas": ["inasistencia", "falta", "razones particulares", "51 F", "decreto 505/14"],
+  "campos": [
+    { "nombre": "lugar", "label": "Lugar", "tipo": "text", "obligatorio": true, "default": "San Miguel de Tucumán", "grupo": "Encabezado" },
+    { "nombre": "fecha_nota", "label": "Fecha de la nota", "tipo": "date", "obligatorio": true, "default": "hoy", "grupo": "Encabezado" },
+    { "nombre": "destinatario", "label": "Dirigida a", "tipo": "select", "obligatorio": true, "opciones": ["A la Sra. Directora", "Al Sr. Director"], "default": "A la Sra. Directora", "grupo": "Encabezado" },
+    { "nombre": "escuela", "label": "Escuela", "tipo": "text", "obligatorio": true, "misDatos": "escuela", "placeholder": "Ej: Escuela N° 123 \"Gral. Belgrano\"", "grupo": "Encabezado" },
+
+    { "nombre": "suscribe", "label": "Presentarme como", "tipo": "select", "obligatorio": true, "opciones": ["La que suscribe", "El que suscribe"], "default": "La que suscribe", "misDatos": "suscribe", "grupo": "Tus datos" },
+    { "nombre": "apellido", "label": "Apellido/s", "tipo": "text", "obligatorio": true, "misDatos": "apellido", "grupo": "Tus datos" },
+    { "nombre": "nombre", "label": "Nombre/s", "tipo": "text", "obligatorio": true, "misDatos": "nombre", "grupo": "Tus datos" },
+    { "nombre": "dni", "label": "DNI", "tipo": "text", "obligatorio": true, "validacion": "dni", "inputMode": "numeric", "placeholder": "Sin puntos", "misDatos": "dni", "grupo": "Tus datos" },
+    { "nombre": "domicilio", "label": "Domicilio (calle y número)", "tipo": "text", "obligatorio": true, "misDatos": "domicilio", "grupo": "Tus datos" },
+    { "nombre": "localidad", "label": "Localidad del domicilio", "tipo": "text", "obligatorio": true, "misDatos": "localidad", "grupo": "Tus datos" },
+
+    { "nombre": "fecha_inasistencia", "label": "Día de la inasistencia", "tipo": "date", "obligatorio": true, "grupo": "Inasistencia" }
+  ],
+  "plantilla": {
+    "lugarFecha": "{{lugar}}, {{fecha_nota|larga}}",
+    "destinatario": ["{{destinatario}} de la", "{{escuela}}", "S / D"],
+    "parrafos": [
+      "{{suscribe}} {{apellido}}, {{nombre}}, DNI Nº {{dni}}, con domicilio en calle {{domicilio}} de {{localidad}}, solicita a Ud. y por su intermedio a quien corresponda, justifique mi inasistencia al día {{fecha_inasistencia}}, según lo establecido por el Decreto 505/14 en su artículo 51 “F”, por razones particulares.",
+      "Sin otro particular, saludo a Ud. atentamente."
+    ],
+    "firma": ["{{nombre}} {{apellido}}", "DNI {{dni}}"]
+  }
+}
