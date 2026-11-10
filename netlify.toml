@@ -2,6 +2,11 @@
   command = "npm run build"
   publish = "dist"
 
+# Mientras el backend no esté publicado, la web usa las leyes de ejemplo (modo demostración).
+# Cuando el backend esté en Render: borrar esta línea (o poner "false") y definir VITE_API_URL en Netlify.
+[build.environment]
+  VITE_DEMO = "true"
+
 # SPA: todas las rutas las resuelve React Router
 [[redirects]]
   from = "/*"

@@ -1,0 +1,38 @@
+[
+  {
+    "id": 7,
+    "nombre": "Calificaciones"
+  },
+  {
+    "id": 4,
+    "nombre": "Concursos"
+  },
+  {
+    "id": 5,
+    "nombre": "Estatuto"
+  },
+  {
+    "id": 3,
+    "nombre": "Jubilación"
+  },
+  {
+    "id": 1,
+    "nombre": "Licencias"
+  },
+  {
+    "id": 9,
+    "nombre": "Otros"
+  },
+  {
+    "id": 2,
+    "nombre": "Salario"
+  },
+  {
+    "id": 6,
+    "nombre": "Titularizaciones"
+  },
+  {
+    "id": 8,
+    "nombre": "Traslados"
+  }
+]

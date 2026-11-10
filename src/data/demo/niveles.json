@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "nombre": "Inicial"
+  },
+  {
+    "id": 2,
+    "nombre": "Primario"
+  },
+  {
+    "id": 3,
+    "nombre": "Secundario"
+  },
+  {
+    "id": 4,
+    "nombre": "Superior"
+  },
+  {
+    "id": 5,
+    "nombre": "Todos los niveles"
+  }
+]

@@ -1,5 +1,8 @@
 export const API_URL = (import.meta.env.VITE_API_URL || 'http://localhost:4000/api').replace(/\/$/, '');
 
+/** Modo demostración: el front funciona sin backend con datos de ejemplo (src/data/demo). */
+export const DEMO = import.meta.env.VITE_DEMO === 'true';
+
 export class ApiError extends Error {
   constructor(status, message, detalles) {
     super(message);
@@ -10,6 +13,15 @@ export class ApiError extends Error {
 
 /** fetch con base URL, JSON y mensajes de error legibles. */
 export async function api(path, { signal, ...opts } = {}) {
+  if (DEMO) {
+    const { demoApi } = await import('./demoApi.js');
+    try {
+      return await demoApi(path);
+    } catch (err) {
+      throw new ApiError(err.status ?? 500, err.message);
+    }
+  }
+
   let res;
   try {
     res = await fetch(`${API_URL}${path}`, { signal, ...opts });

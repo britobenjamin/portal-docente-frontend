@@ -1,0 +1,246 @@
+[
+  {
+    "id": 4,
+    "slug": "titularizacion-de-docentes-interinos",
+    "jurisdiccion": "provincial",
+    "tipo": "resolucion",
+    "numero": "3001/5",
+    "titulo": "[EJEMPLO] Titularización de Docentes Interinos",
+    "resumen": "Fija el procedimiento y los requisitos para la titularización de docentes interinos con antigüedad en el cargo.",
+    "palabras_clave": [
+      "titularizacion",
+      "interinos",
+      "antiguedad",
+      "cargo titular"
+    ],
+    "anio": 2022,
+    "pdf_url": "/demo/leyes/titularizacion-de-docentes-interinos-4d913be9.pdf",
+    "pdf_download_url": "/demo/leyes/titularizacion-de-docentes-interinos-4d913be9.pdf",
+    "pdf_thumb_url": null,
+    "estado": "vigente",
+    "derogada_por": null,
+    "categorias": [
+      {
+        "id": 6,
+        "nombre": "Titularizaciones"
+      }
+    ],
+    "niveles": [
+      {
+        "id": 1,
+        "nombre": "Inicial"
+      },
+      {
+        "id": 2,
+        "nombre": "Primario"
+      },
+      {
+        "id": 3,
+        "nombre": "Secundario"
+      }
+    ],
+    "creado_en": "2026-11-10T17:10:26.000Z",
+    "actualizado_en": "2026-11-10T17:10:26.000Z"
+  },
+  {
+    "id": 3,
+    "slug": "reglamento-de-juntas-de-clasificacion",
+    "jurisdiccion": "provincial",
+    "tipo": "decreto",
+    "numero": "2001/3",
+    "titulo": "[EJEMPLO] Reglamento de Juntas de Clasificación",
+    "resumen": "Reglamenta el funcionamiento de las Juntas de Clasificación, la valoración de antecedentes y la confección de listados de orden de mérito.",
+    "palabras_clave": [
+      "junta de clasificacion",
+      "puntaje",
+      "antecedentes",
+      "orden de merito",
+      "listados"
+    ],
+    "anio": 2015,
+    "pdf_url": "/demo/leyes/reglamento-de-juntas-de-clasificacion-c33097cc.pdf",
+    "pdf_download_url": "/demo/leyes/reglamento-de-juntas-de-clasificacion-c33097cc.pdf",
+    "pdf_thumb_url": null,
+    "estado": "vigente",
+    "derogada_por": null,
+    "categorias": [
+      {
+        "id": 7,
+        "nombre": "Calificaciones"
+      },
+      {
+        "id": 4,
+        "nombre": "Concursos"
+      }
+    ],
+    "niveles": [
+      {
+        "id": 2,
+        "nombre": "Primario"
+      },
+      {
+        "id": 3,
+        "nombre": "Secundario"
+      }
+    ],
+    "creado_en": "2026-11-10T17:10:26.000Z",
+    "actualizado_en": "2026-11-10T17:10:26.000Z"
+  },
+  {
+    "id": 2,
+    "slug": "regimen-de-licencias-docentes",
+    "jurisdiccion": "provincial",
+    "tipo": "ley",
+    "numero": "1002",
+    "titulo": "[EJEMPLO] Régimen de Licencias Docentes",
+    "resumen": "Establece las licencias ordinarias y extraordinarias: enfermedad, maternidad, paternidad, estudio, cuidado de familiar y actividad gremial.",
+    "palabras_clave": [
+      "licencia",
+      "enfermedad",
+      "maternidad",
+      "paternidad",
+      "estudio",
+      "familiar enfermo",
+      "art 40"
+    ],
+    "anio": 2010,
+    "pdf_url": "/demo/leyes/regimen-de-licencias-docentes-7a27d373.pdf",
+    "pdf_download_url": "/demo/leyes/regimen-de-licencias-docentes-7a27d373.pdf",
+    "pdf_thumb_url": null,
+    "estado": "vigente",
+    "derogada_por": null,
+    "categorias": [
+      {
+        "id": 1,
+        "nombre": "Licencias"
+      }
+    ],
+    "niveles": [
+      {
+        "id": 5,
+        "nombre": "Todos los niveles"
+      }
+    ],
+    "creado_en": "2026-11-10T17:10:26.000Z",
+    "actualizado_en": "2026-11-10T17:10:26.000Z"
+  },
+  {
+    "id": 6,
+    "slug": "ley-de-educacion-nacional",
+    "jurisdiccion": "nacional",
+    "tipo": "ley",
+    "numero": "90.001",
+    "titulo": "[EJEMPLO] Ley de Educación Nacional",
+    "resumen": "Regula el ejercicio del derecho de enseñar y aprender, la estructura del sistema educativo y los derechos y obligaciones de los docentes.",
+    "palabras_clave": [
+      "educacion nacional",
+      "sistema educativo",
+      "obligatoriedad",
+      "derechos docentes"
+    ],
+    "anio": 2006,
+    "pdf_url": "/demo/leyes/ley-de-educacion-nacional-0cfc0c62.pdf",
+    "pdf_download_url": "/demo/leyes/ley-de-educacion-nacional-0cfc0c62.pdf",
+    "pdf_thumb_url": null,
+    "estado": "vigente",
+    "derogada_por": null,
+    "categorias": [
+      {
+        "id": 5,
+        "nombre": "Estatuto"
+      },
+      {
+        "id": 9,
+        "nombre": "Otros"
+      }
+    ],
+    "niveles": [
+      {
+        "id": 5,
+        "nombre": "Todos los niveles"
+      }
+    ],
+    "creado_en": "2026-11-10T17:10:26.000Z",
+    "actualizado_en": "2026-11-10T17:10:26.000Z"
+  },
+  {
+    "id": 7,
+    "slug": "fondo-nacional-de-incentivo-docente",
+    "jurisdiccion": "nacional",
+    "tipo": "ley",
+    "numero": "90.002",
+    "titulo": "[EJEMPLO] Fondo Nacional de Incentivo Docente",
+    "resumen": "Crea un fondo para el mejoramiento de la remuneración de los docentes de todo el país.",
+    "palabras_clave": [
+      "fonid",
+      "incentivo",
+      "salario",
+      "remuneracion",
+      "fondo"
+    ],
+    "anio": 1998,
+    "pdf_url": "/demo/leyes/fondo-nacional-de-incentivo-docente-f8be2a6e.pdf",
+    "pdf_download_url": "/demo/leyes/fondo-nacional-de-incentivo-docente-f8be2a6e.pdf",
+    "pdf_thumb_url": null,
+    "estado": "vigente",
+    "derogada_por": null,
+    "categorias": [
+      {
+        "id": 2,
+        "nombre": "Salario"
+      }
+    ],
+    "niveles": [
+      {
+        "id": 5,
+        "nombre": "Todos los niveles"
+      }
+    ],
+    "creado_en": "2026-11-10T17:10:26.000Z",
+    "actualizado_en": "2026-11-10T17:10:26.000Z"
+  },
+  {
+    "id": 1,
+    "slug": "estatuto-del-docente-de-la-provincia",
+    "jurisdiccion": "provincial",
+    "tipo": "estatuto",
+    "numero": "1001",
+    "titulo": "[EJEMPLO] Estatuto del Docente de la Provincia",
+    "resumen": "Regula los derechos y deberes del personal docente, el ingreso a la carrera, la estabilidad, los ascensos, traslados y el régimen disciplinario.",
+    "palabras_clave": [
+      "estatuto",
+      "derechos",
+      "deberes",
+      "carrera docente",
+      "estabilidad"
+    ],
+    "anio": 1985,
+    "pdf_url": "/demo/leyes/estatuto-del-docente-de-la-provincia-fc1a5fe8.pdf",
+    "pdf_download_url": "/demo/leyes/estatuto-del-docente-de-la-provincia-fc1a5fe8.pdf",
+    "pdf_thumb_url": null,
+    "estado": "vigente",
+    "derogada_por": null,
+    "categorias": [
+      {
+        "id": 4,
+        "nombre": "Concursos"
+      },
+      {
+        "id": 5,
+        "nombre": "Estatuto"
+      },
+      {
+        "id": 8,
+        "nombre": "Traslados"
+      }
+    ],
+    "niveles": [
+      {
+        "id": 5,
+        "nombre": "Todos los niveles"
+      }
+    ],
+    "creado_en": "2026-11-10T17:10:26.000Z",
+    "actualizado_en": "2026-11-10T17:10:26.000Z"
+  }
+]
